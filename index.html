@@ -1,81 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TexhPC</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
     <header id="head">
         <img src="img/Logo_glowed.png" alt="Logo">
 
-        <a href="./computers/computers.html">Компьютер</a>
-        <a href="./component/components.html">Комплектующие</a>
-        <a href="./peripherals/peripherals.html">Периферия</a>
+        <a href="#">Компьютер</a>
+        <a href="#">Комплектующие</a>
+        <a href="#">Периферия</a>
         <button id="order">ЗАКАЗАТЬ</button>
     </header>
+    
     <div class="top">
-        <h1>🔥Самые популярные🔥</h1>
+        <h1 class="section-title">🔥Самые популярные🔥</h1>
         <div class="container">
-            <div>
+            <div class="card">
                 <img src="/img/CyberPC.png" alt="CyberPC">
-                <h3>RTX 4090</h3>
-                <p>59,999 ₽</p>
+                <h3>Игровой ПК CyberPC</h3>
+                <div class="rating">
+                    <span class="stars">★★★★★</span> 4.9 <span class="reviews">(149 отзывов)</span>
+                </div>
+                <p class="price">59,999 ₽ <span class="old-price">79,999 ₽ -25%</span></p>
+                <div class="actions">
+                    <button class="cart-btn">В корзину</button>
+                </div>
             </div>
-            <div>
+            <div class="card">
                 <img src="/img/HeliumPC.png" alt="Helium">
-                <h3>RTX 4090</h3>
-                <p>59,999 ₽</p>
+                <h3>Игровой ПК Helium</h3>
+                <div class="rating">
+                    <span class="stars">★★★★★</span> 4.7 <span class="reviews">(84 отзыва)</span>
+                </div>
+                <p class="price">59,999 ₽</p>
+                <div class="actions">
+                    <button class="cart-btn">В корзину</button>
+                </div>
             </div>
-            <div>
+            <div class="card">
                 <img src="/img/IronPC.png" alt="Iron">
-                <h3>RTX 4090</h3>
-                <p>59,999 ₽</p>
+                <h3>Игровой ПК Iron</h3>
+                <div class="rating">
+                    <span class="stars">★★★★★</span> 4.8 <span class="reviews">(60 отзывов)</span>
+                </div>
+                <p class="price">59,999 ₽ <span class="old-price">69,999 ₽ -14%</span></p>
+                <div class="actions">
+                    <button class="cart-btn">В корзину</button>
+                </div>
             </div>
         </div>
 
         <div class="container">
-            <div>
+            <div class="card">
                 <img src="/img/Complect_Base.jpg" alt="Base">
-                <h3>RTX 4090</h3>
-                <p>59,999 ₽</p>
+                <h3>Комплект Base RTX 3060</h3>
+                <div class="rating">
+                    <span class="stars">★★★★★</span> 4.5 <span class="reviews">(32 отзыва)</span>
+                </div>
+                <p class="price">45,999 ₽</p>
+                <div class="actions">
+                    <button class="cart-btn">В корзину</button>
+                </div>
             </div>
-            <div>
+            <div class="card">
                 <img src="/img/Complect_Middle.jpg" alt="Middle">
-                <h3>RTX 4090</h3>
-                <p>59,999 ₽</p>
+                <h3>Комплект Middle RTX 4070</h3>
+                <div class="rating">
+                    <span class="stars">★★★★★</span> 4.6 <span class="reviews">(45 отзывов)</span>
+                </div>
+                <p class="price">69,999 ₽ <span class="old-price">89,999 ₽ -22%</span></p>
+                <div class="actions">
+                    <button class="cart-btn">В корзину</button>
+                </div>
             </div>
-            <div>
+            <div class="card">
                 <img src="/img/Complect_Premium.jpg" alt="Premium">
-                <h3>RTX 4090</h3>
-                <p>59,999 ₽</p>
+                <h3>Комплект Premium RTX 4090</h3>
+                <div class="rating">
+                    <span class="stars">★★★★★</span> 4.9 <span class="reviews">(78 отзывов)</span>
+                </div>
+                <p class="price">99,999 ₽</p>
+                <div class="actions">
+                    <button class="cart-btn">В корзину</button>
+                </div>
             </div>
         </div>
 
         <div class="container">
-            <div>
+            <div class="card">
                 <img src="/img/Intel_core_i5.jpg" alt="Intel_Core_i5">
-                <h3>RTX 4090</h3>
-                <p>59,999 ₽</p>
+                <h3>Процессор Intel Core i5-13400</h3>
+                <div class="rating">
+                    <span class="stars">★★★★★</span> 4.7 <span class="reviews">(53 отзыва)</span>
+                </div>
+                <p class="price">19,999 ₽ <span class="old-price">24,999 ₽ -20%</span></p>
+                <div class="actions">
+                    <button class="cart-btn">В корзину</button>
+                </div>
             </div>
-            <div>
+            <div class="card">
                 <img src="/img/RTX_4070.jpg" alt="RTX_4070">
-                <h3>RTX 4090</h3>
-                <p>59,999 ₽</p>
+                <h3>Видеокарта RTX 4070 12GB</h3>
+                <div class="rating">
+                    <span class="stars">★★★★★</span> 4.8 <span class="reviews">(67 отзывов)</span>
+                </div>
+                <p class="price">49,999 ₽</p>
+                <div class="actions">
+                    <button class="cart-btn">В корзину</button>
+                </div>
             </div>
-            <div>
+            <div class="card">
                 <img src="/img/DDR5_32gb.jpg" alt="32GB_DDR5">
-                <h3>RTX 4090</h3>
-                <p>59,999 ₽</p>
+                <h3>Память DDR5 32GB 5200MHz</h3>
+                <div class="rating">
+                    <span class="stars">★★★★★</span> 4.6 <span class="reviews">(29 отзывов)</span>
+                </div>
+                <p class="price">12,999 ₽ <span class="old-price">15,999 ₽ -19%</span></p>
+                <div class="actions">
+                    <button class="cart-btn">В корзину</button>
+                </div>
             </div>
         </div>
     </div>
 
     <script src="app.js"></script>
 </body>
-
 </html>
