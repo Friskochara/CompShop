@@ -79,6 +79,7 @@ header img {
 img {
     cursor: pointer;
     transition: 0.3s ease;
+    
 }
 
 header img:hover {
@@ -356,4 +357,48 @@ header img:hover {
     .card img {
         height: 100px;
     }
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #344742;
+}
+footer a {
+    color: #344742;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+
+
+footer a:hover {
+    color: #ffd700;
+    font-size: 18px;
+}
+
+footer a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #ffd700;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+footer a:hover::after {
+    width: 100%;
+}
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Отступ между ссылками, можешь настроить под себя */
+    list-style: none; /* Убираем точки списка, если они есть */
+    padding: 0; /* Сбрасываем дефолтные отступы */
 }
