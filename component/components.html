@@ -10,6 +10,103 @@
 
 <body>
 
+    <header id="head">
+        <img src="../img/Logo_glowed.png" alt="Logo">
+        <a href="http://127.0.0.1:5500/CompShop/index.html">Главная</a>
+        <a href="http://127.0.0.1:5500/CompShop/computers/computers.html">Компьютер</a>
+        <a href="http://127.0.0.1:5500/CompShop/peripherals/peripherals.html">Периферия</a>
+        <button id="order">ЗАКАЗАТЬ</button>
+    </header>
+
+    <!---------------------------------------------------------------------------------------------------------->
+
+
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <div class="image-container">
+                    <h2>DDR5 32gb</h2>
+                    <img src="../img/DDR5_32gb.jpg" alt="Premium Default" class="image-default">
+                    <img src="../img/DDR5_32gb.jpg" alt="Premium Hover" class="image-hover">
+                </div>
+                <br><br>
+                <div class="price"><p style="font-weight: bold;">TexhPC DDR5 32gb</p></div>
+                <div class="price">22 500 ₽</div>
+                <div class="buttons">
+                    <button class="btn btn-details">Подробнее</button>
+                    <button class="btn btn-order">Заказать</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="image-container">
+                    <h2>i5-12400F</h2>
+                    <img src="../img/i5-12400F.jpg" alt="Premium Default" class="image-default">
+                    <img src="../img/IronPC.png" alt="Premium Hover" class="image-hover">
+                </div>
+                <br><br>
+                <div class="price"><p style="font-weight: bold;">TexhPC i5-12400F</p></div>
+                <div class="price">22 500 ₽</div>
+                <div class="buttons">
+                    <button class="btn btn-details">Подробнее</button>
+                    <button class="btn btn-order">Заказать</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="image-container">
+                    <h2>RTX-4060</h2>
+                    <img src="../img/RTX-4060.jpg" alt="Premium Default" class="image-default">
+                    <img src="../img/RTX-4060.jpg" alt="Premium Hover" class="image-hover">
+                </div>
+                <br><br>
+                <div class="price"><p style="font-weight: bold;">TexhPC RTX-4060</p></div>
+                <div class="price">22 500 ₽</div>
+                <div class="buttons">
+                    <button class="btn btn-details">Подробнее</button>
+                    <button class="btn btn-order">Заказать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="faded-line"></div>
+    
+    <style>
+    .faded-line {
+    height: 2px; /* Толщина линии */
+    background: linear-gradient(
+    to right,
+    transparent 0%, /* Прозрачный слева */
+    #2E1A47 20%,  /* Основной цвет, тёмный, как у тебя (я взял примерный оттенок) */
+    #2E1A47 80%,  /* Тот же цвет до 80% */
+    transparent 100% /* Прозрачный справа */
+    );
+    margin: 30px 0; /* Отступы сверху и снизу */
+    }
+    </style>
+    
+    
+    <!---------------------------------------------------------------------------------------------------------->
+    
+    
+    <footer>
+        <div class="footer-content">
+            <h2>TexhPC</h2>
+            <p>Ваш надежный помощник в мире технологий!</p>
+            <ul class="socials">
+                <li><a href="https://www.instagram.com/napstablook2.2">Instagram</a></li>
+                <li><a href="https://github.com/Friskochara">GitHub</a></li>
+                <li><a href="https://www.youtube.com/@DarkarCS2">YouTube</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 TexhPC. Все права защищены.</p>
+        </div>
+    </footer>
+
 </body>
 
 </html>

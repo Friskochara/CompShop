@@ -10,122 +10,276 @@
     <header id="head">
         <img src="img/Logo_glowed.png" alt="Logo">
 
-        <a href="#">Компьютер</a>
-        <a href="#">Комплектующие</a>
-        <a href="#">Периферия</a>
+        <a href="/computers/computers.html">Компьютер</a>
+        <a href="/component/components.html">Комплектующие</a>
+        <a href="/peripherals/peripherals.html">Периферия</a>
         <button id="order">ЗАКАЗАТЬ</button>
     </header>
+
+    <h1 class="section-title">🔥Самые популярные🔥</h1>
+
+    <div class="faded-line"></div>
     
-    <div class="top">
-        <h1 class="section-title">🔥Самые популярные🔥</h1>
-        <div class="container">
-            <div class="card">
-                <img src="/img/CyberPC.png" alt="CyberPC">
-                <h3>CyberPC</h3>
-                <div class="rating">
-                    <span class="stars">★★★★★</span> 4.9 <span class="reviews">(149 отзывов)</span>
+    <style>
+    .faded-line {
+    height: 2px; /* Толщина линии */
+    background: linear-gradient(
+    to right,
+    transparent 0%, /* Прозрачный слева */
+    #2E1A47 20%,  /* Основной цвет, тёмный, как у тебя (я взял примерный оттенок) */
+    #2E1A47 80%,  /* Тот же цвет до 80% */
+    transparent 100% /* Прозрачный справа */
+    );
+    margin: 30px 0; /* Отступы сверху и снизу */
+    }
+    </style>
+
+    <!---------------------------------------------------------------------------------------------------------->
+
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <div class="image-container">
+                    <h2>CyberPC</h2>
+                    <img src="./img/CyberPC.png" alt="Premium Default" class="image-default">
+                    <img src="./img/CyberPC.png" alt="Premium Hover" class="image-hover">
                 </div>
-                <p class="price">330,000 ₽ <span class="old-price">350,000 ₽ -10%</span></p>
-                <div class="actions">
-                    <button class="cart-btn">В корзину</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="/img/HeliumPC.png" alt="Helium">
-                <h3>Helium PC</h3>
-                <div class="rating">
-                    <span class="stars">★★★★★</span> 4.7 <span class="reviews">(84 отзыва)</span>
-                </div>
-                <p class="price">114,000 ₽</p>
-                <div class="actions">
-                    <button class="cart-btn">В корзину</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="/img/IronPC.png" alt="Iron">
-                <h3>Iron PC</h3>
-                <div class="rating">
-                    <span class="stars">★★★★★</span> 4.8 <span class="reviews">(60 отзывов)</span>
-                </div>
-                <p class="price">74,000 ₽ <span class="old-price">79,000 ₽ -10%</span></p>
-                <div class="actions">
-                    <button class="cart-btn">В корзину</button>
+                <br><br>
+                <div class="price"><p style="font-weight: bold;">TexhPC CyberPC</p></div>
+                <div class="price">22 500 ₽</div>
+                <div class="buttons">
+                    <button class="btn btn-details">Подробнее</button>
+                    <button class="btn btn-order">Заказать</button>
                 </div>
             </div>
         </div>
-
-        <div class="container">
-            <div class="card">
-                <img src="/img/Complect_Base.jpg" alt="Base">
-                <h3>Комплект Base</h3>
-                <div class="rating">
-                    <span class="stars">★★★★★</span> 4.5 <span class="reviews">(32 отзыва)</span>
+        <div class="card">
+            <div class="card-content">
+                <div class="image-container">
+                    <h2>IronPC</h2>
+                    <img src="./img/IronPC.png" alt="Premium Default" class="image-default">
+                    <img src="./img/IronPC.png" alt="Premium Hover" class="image-hover">
                 </div>
-                <p class="price">22,500 ₽</p>
-                <div class="actions">
-                    <button class="cart-btn">В корзину</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="/img/Complect_Middle.jpg" alt="Middle">
-                <h3>Комплект Middle</h3>
-                <div class="rating">
-                    <span class="stars">★★★★★</span> 4.6 <span class="reviews">(45 отзывов)</span>
-                </div>
-                <p class="price">25,000 ₽ <span class="old-price">27,500 ₽ -10%</span></p>
-                <div class="actions">
-                    <button class="cart-btn">В корзину</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="/img/Complect_Premium.jpg" alt="Premium">
-                <h3>Комплект Premium</h3>
-                <div class="rating">
-                    <span class="stars">★★★★★</span> 4.9 <span class="reviews">(78 отзывов)</span>
-                </div>
-                <p class="price">36,500 ₽</p>
-                <div class="actions">
-                    <button class="cart-btn">В корзину</button>
+                <br><br>
+                <div class="price"><p style="font-weight: bold;">TexhPC IronPC</p></div>
+                <div class="price">22 500 ₽</div>
+                <div class="buttons">
+                    <button class="btn btn-details">Подробнее</button>
+                    <button class="btn btn-order">Заказать</button>
                 </div>
             </div>
         </div>
-
-        <div class="container">
-            <div class="card">
-                <img src="/img/i5-12400F.jpg" alt="12400F">
-                <h3>Intel Core i5-12400F</h3>
-                <div class="rating">
-                    <span class="stars">★★★★★</span> 4.7 <span class="reviews">(53 отзыва)</span>
+        <div class="card">
+            <div class="card-content">
+                <div class="image-container">
+                    <h2>HeliumPC</h2>
+                    <img src="./img/HeliumPC.png" alt="Premium Default" class="image-default">
+                    <img src="./img/HeliumPC.png" alt="Premium Hover" class="image-hover">
                 </div>
-                <p class="price">10,173 ₽ <span class="old-price">14,416 ₽ -29%</span></p>
-                <div class="actions">
-                    <button class="cart-btn">В корзину</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="/img/RTX-4060.jpg" alt="RTX_4070" class="RTX-4060">
-                <h3>RTX 4060 8GB</h3>
-                <div class="rating">
-                    <span class="stars">★★★★★</span> 4.8 <span class="reviews">(67 отзывов)</span>
-                </div>
-                <p class="price">46,629 ₽</p>
-                <div class="actions">
-                    <button class="cart-btn">В корзину</button>
-                </div>
-            </div>
-            <div class="card">
-                <img src="/img/DDR5_32gb.jpg" alt="32GB_DDR5">
-                <h3>32GB DDR5</h3>
-                <div class="rating">
-                    <span class="stars">★★★★★</span> 4.6 <span class="reviews">(29 отзывов)</span>
-                </div>
-                <p class="price">12,860 ₽ <span class="old-price">17,219 ₽ -25%</span></p>
-                <div class="actions">
-                    <button class="cart-btn">В корзину</button>
+                <br><br>
+                <div class="price"><p style="font-weight: bold;">TexhPC HeliumPC</p></div>
+                <div class="price">22 500 ₽</div>
+                <div class="buttons">
+                    <button class="btn btn-details">Подробнее</button>
+                    <button class="btn btn-order">Заказать</button>
                 </div>
             </div>
         </div>
     </div>
+    
+    <div class="faded-line"></div>
+    
+    <style>
+    .faded-line {
+    height: 2px; /* Толщина линии */
+    background: linear-gradient(
+    to right,
+    transparent 0%, /* Прозрачный слева */
+    #2E1A47 20%,  /* Основной цвет, тёмный, как у тебя (я взял примерный оттенок) */
+    #2E1A47 80%,  /* Тот же цвет до 80% */
+    transparent 100% /* Прозрачный справа */
+    );
+    margin: 30px 0; /* Отступы сверху и снизу */
+    }
+    </style>
+
+<!---------------------------------------------------------------------------------------------------------->
+
+<div class="container">
+    <div class="card">
+        <div class="card-content">
+            <div class="image-container">
+                <h2>Premium</h2>
+                <img src="./img/Premium.jpg" alt="Premium Default" class="image-default">
+                <img src="./img/Premium_Hover.jpg" alt="Premium Hover" class="image-hover">
+            </div>
+            <div class="text-container">
+                <div class="text-default">
+                    <div class="price"><p style="font-weight: bold;">Комплект Premium (Клавиатура, мышь, монитор)</p></div>
+                </div>
+                <div class="text-hover">
+                    <p> 🔥Комплект Premium:</p>
+                    <p> 🖱 Мышь: AJazz AJ159Pro Black/White</p>
+                    <p> ⌨️ Клавиатура: Ajazz AK820Pro Black/White</p>
+                    <p> 🖥 Монитор: Redmi P27QCA</p>
+                    <p> ✅ 27 дюймoв QHD и 165-гц</p>
+                    <p> ✅ Tип матрицы: IPS</p>
+                    <p> ✅ Pазъeмы: DisplayPort, HDMI</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="price">36 500 ₽</div>
+            <div class="buttons">
+                <button class="btn btn-details">Подробнее</button>
+                <button class="btn btn-order">Заказать</button>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <div class="image-container">
+                <h2>Middle</h2>
+                <img src="./img/Middle.jpg" alt="Premium Default" class="image-default">
+                <img src="./img/Middle_Hover.jpg" alt="Premium Hover" class="image-hover">
+            </div>
+            <div class="text-container">
+                <div class="text-default">
+                    <div class="price">Комплект Middle (Клавиатура, мышь, монитор)</div>
+                </div>
+                <div class="text-hover">
+                    <p>🔥Комплект Middle:</p>
+                    <p>🖱 Мышь: Ajazz AJ139Pro Black/White</p>
+                    <p>⌨️ Клавиатура: Ajazz AK820 Black/White</p>
+                    <p>🖥 Монитор: Модель: Redmi G27</p>
+                    <p>✅ 27 дюймoв FHD и 165-гц</p>
+                    <p>✅ Tип матрицы: IPS</p>
+                    <p>✅ Pазъeмы: DisplayPort, HDMI</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="price">25 000 ₽</div>
+            <div class="buttons">
+                <button class="btn btn-details">Подробнее</button>
+                <button class="btn btn-order">Заказать</button>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <div class="image-container">
+                <h2>Base</h2>
+                <img src="./img/Base.jpg" alt="Premium Default" class="image-default">
+                <img src="./img/Base_Hover.jpg" alt="Premium Hover" class="image-hover">
+            </div>
+            <div class="text-container">
+                <div class="text-default">
+                    <div class="price"><p style="font-weight: bold;">Комплект Base (Клавиатура, мышь, монитор)</p></div>
+                </div>
+                <div class="text-hover">
+                    <p>🔥Комплект Base:</p>
+                    <p>🖱 Мышь: Ajazz AJ139Pro Black/White</p>
+                    <p>⌨️ Клавиатура: Ajazz AK820 Black/White</p>
+                    <p>🖥 Монитор: Redmi G24</p>
+                    <p>✅ 23.8 дюймoв FHD и 165-гц</p>
+                    <p>✅ Tип матрицы: VA</p>
+                    <p>✅ Pазъeмы: DisplayPort, HDMI</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="price">22 500 ₽</div>
+            <div class="buttons">
+                <button class="btn btn-details">Подробнее</button>
+                <button class="btn btn-order">Заказать</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="faded-line"></div>
+
+<style>
+.faded-line {
+height: 2px; /* Толщина линии */
+background: linear-gradient(
+to right,
+transparent 0%, /* Прозрачный слева */
+#2E1A47 20%,  /* Основной цвет, тёмный, как у тебя (я взял примерный оттенок) */
+#2E1A47 80%,  /* Тот же цвет до 80% */
+transparent 100% /* Прозрачный справа */
+);
+margin: 30px 0; /* Отступы сверху и снизу */
+}
+</style>
+
+<!---------------------------------------------------------------------------------------------------------->
+
+<div class="container">
+    <div class="card">
+        <div class="card-content">
+            <div class="image-container">
+                <h2>DDR5 32gb</h2>
+                <img src="./img/DDR5_32gb.jpg" alt="Premium Default" class="image-default">
+                <img src="./img/DDR5_32gb.jpg" alt="Premium Hover" class="image-hover">
+            </div>
+            <br><br>
+            <div class="price"><p style="font-weight: bold;">TexhPC DDR5 32gb</p></div>
+            <div class="price">22 500 ₽</div>
+            <div class="buttons">
+                <button class="btn btn-details">Подробнее</button>
+                <button class="btn btn-order">Заказать</button>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <div class="image-container">
+                <h2>i5-12400F</h2>
+                <img src="./img/i5-12400F.jpg" alt="Premium Default" class="image-default">
+                <img src="./img/IronPC.png" alt="Premium Hover" class="image-hover">
+            </div>
+            <br><br>
+            <div class="price"><p style="font-weight: bold;">TexhPC i5-12400F</p></div>
+            <div class="price">22 500 ₽</div>
+            <div class="buttons">
+                <button class="btn btn-details">Подробнее</button>
+                <button class="btn btn-order">Заказать</button>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <div class="image-container">
+                <h2>RTX-4060</h2>
+                <img src="./img/RTX-4060.jpg" alt="Premium Default" class="image-default">
+                <img src="./img/RTX-4060.jpg" alt="Premium Hover" class="image-hover">
+            </div>
+            <br><br>
+            <div class="price"><p style="font-weight: bold;">TexhPC RTX-4060</p></div>
+            <div class="price">22 500 ₽</div>
+            <div class="buttons">
+                <button class="btn btn-details">Подробнее</button>
+                <button class="btn btn-order">Заказать</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="faded-line"></div>
+
+<style>
+.faded-line {
+height: 2px; /* Толщина линии */
+background: linear-gradient(
+to right,
+transparent 0%, /* Прозрачный слева */
+#2E1A47 20%,  /* Основной цвет, тёмный, как у тебя (я взял примерный оттенок) */
+#2E1A47 80%,  /* Тот же цвет до 80% */
+transparent 100% /* Прозрачный справа */
+);
+margin: 30px 0; /* Отступы сверху и снизу */
+}
+</style>
+
+<!---------------------------------------------------------------------------------------------------------->
 
 <footer>
     <div class="footer-content">

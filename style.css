@@ -1,22 +1,20 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
-
-html,
-body {
+html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100%;
-    font-family: 'Montserrat', Arial, sans-serif;
+    background: linear-gradient(135deg, #1a1a1a, #2a1a3a);
+    color: #fff;
 }
 
 #head {
     width: 100%;
     height: 12%;
-    background-color: #f2f2f2;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -24,7 +22,7 @@ body {
 
 #head a {
     text-decoration: none;
-    color: #344742;
+    color: #bfbfbf;
     font-weight: 600;
     font-size: 18px;
     transition: 0.3s ease;
@@ -53,7 +51,7 @@ body {
 
 
 #order {
-    background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+    background: #eab308;
     border: none;
     width: 200px;
     height: 50px;
@@ -84,287 +82,192 @@ img {
 
 header img:hover {
     transform: scale(1.2);
+    
 }
 
-.top {
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 0 20px;
-}
+/* ----------------------------------------------------------------------------------------------------- */
 
 .section-title {
-    font-size: 28px;
-    font-weight: 700;
-    color: #000;
-    text-align: center; /* Центрируем текст */
-    margin-bottom: 20px;
-    position: relative;
-    display: block; /* Устанавливаем display: block, чтобы заголовок занимал всю ширину */
-    padding-bottom: 10px;
+    font-size: 2em;
     text-transform: uppercase;
-    width: 100%; /* Убедимся, что заголовок занимает всю ширину контейнера */
+    color: #fff;
+    text-shadow: 0 0 10px rgba(147, 51, 234, 0.8);
+    margin-bottom: 15px;
+    text-align: center;
 }
 
-.section-title::after {
-    content: '';
-    position: absolute;
-    width: 38%;
-    height: 4px;
-    background: linear-gradient(90deg, #ff6b6b, #ff8e53);
-    bottom: 0;
-    left: 50%; /* Центрируем подчёркивание */
-    transform: translateX(-50%); /* Смещаем на 50% влево, чтобы подчёркивание было строго по центру */
-    border-radius: 2px;
-}
+/* ----------------------------------------------------------------------------------------------------- */
 
 .container {
+    padding-left: 50px;
+    padding-right: 50px;
     display: flex;
-    gap: 25px;
-    margin-bottom: 40px;
-    overflow-x: auto;
-    padding-bottom: 15px;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: thin;
-    scrollbar-color: #ff6b6b #f5f7fa;
     justify-content: space-between;
-}
-
-.container::-webkit-scrollbar {
-    height: 8px;
-}
-
-.container::-webkit-scrollbar-thumb {
-    background: #ff6b6b;
-    border-radius: 4px;
-}
-
-.container::-webkit-scrollbar-track {
-    background: #f5f7fa;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .card {
-    background: #fff;
+    background: rgba(34, 197, 94, 0.2);
     border-radius: 15px;
-    width: 240px;
+    width: 450px;
     padding: 20px;
-    text-align: center;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    flex-shrink: 0;
-    scroll-snap-align: start;
-    animation: fadeInUp 0.6s ease-out forwards;
+    position: relative;
+    overflow: hidden;
 }
 
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.card img {
-    max-width: 100%;
-    height: 150px;
-    object-fit: contain;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    transition: transform 0.3s ease;
-}
-
-.card:hover img {
     transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(147, 51, 234, 0.7);
 }
 
-.card h3 {
-    font-size: 16px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 10px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(147, 51, 234, 0.2), rgba(34, 197, 94, 0.2));
+    z-index: 0;
+    opacity: 0.5;
 }
 
-.card .rating {
-    font-size: 14px;   
-    color: #ffd700;
-    margin-bottom: 10px;
+.card-content {
+    position: relative;
+    z-index: 1;
 }
 
-.card .rating .stars {
-    letter-spacing: 2px;
-}
-
-.card .rating span {
-    color: #ffd700;
-    font-size: 12px;
-}
-
-.card .rating .reviews {
-    color: #888;
-    font-size: 12px;
-}
-
-
-.card .price {
-    font-size: 20px;
-    font-weight: 700;
-    color: #e00;
-    margin-bottom: 5px;
-    display: inline-block;
-}
-
-.card .old-price {
-    font-size: 14px;
-    color: #888;
-    text-decoration: line-through;
-    margin-left: 5px;
-}
-
-.card .actions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    margin-top: 15px;
-}
-
-.card .cart-btn {
-    background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+.card h2 {
+    font-size: 2em;
+    text-transform: uppercase;
     color: #fff;
-    border: none;
-    border-radius: 8px;
-    padding: 10px;
-    flex-grow: 1;
-    font-size: 14px;
-    font-weight: 600;
+    text-shadow: 0 0 10px rgba(147, 51, 234, 0.8);
+    margin-bottom: 15px;
+    text-align: center;
+}
+/* Убедимся, что image-container правильно позиционирует элементы */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 15px;
+}
+
+/* Стили для картинок */
+.image-default,
+.image-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+
+/* Эффект наведения для картинок */
+.image-default {
+    opacity: 1;
+}
+
+.image-hover {
+    opacity: 0;
+}
+
+.card:hover .image-default {
+    opacity: 0;
+}
+
+.card:hover .image-hover {
+    opacity: 1;
+}
+
+/* Стили для заголовка */
+.image-container h2 {
+    position: absolute;
+    top: 10px;
+    left: 32%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(147, 51, 234, 0.8);
+    z-index: 2;
+    margin: 0;
+    opacity: 0; /* Скрываем текст по умолчанию */
+    transition: opacity 0.3s ease; /* Плавное появление */
+}
+
+/* Показываем текст при наведении на карточку */
+.card:hover .image-container h2 {
+    opacity: 1; /* Показываем текст */
+
+}
+
+.text-container {
+    position: relative;
+    height: 150px; /* Фиксированная высота для текста */
+    margin-bottom: 15px;
+}
+
+
+
+.price {
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.3s ease;
+    transition: background 0.3s ease;
 }
 
-.card .cart-btn:hover {
-    background: linear-gradient(45deg, #ff8e53, #ff6b6b);
-    transform: scale(1.03);
+.btn-details {
+    background: #facc15;
+    color: #000;
+    border-radius: 25px;
 }
 
-.card .favorite-btn {
-    background: none;
-    border: none;
-    font-size: 20px;
-    color: #888;
-    cursor: pointer;
-    transition: color 0.3s ease, transform 0.3s ease;
+.btn-details:hover {
+    background: #eab308;
 }
 
-.card .favorite-btn:hover {
-    color: #e00;
-    transform: scale(1.2);
-}
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.btn-order {
+    border-radius: 25px;
+    background: #333;
+    color: #fff;
+    border: 1px solid #fff;
 }
 
-/* Адаптивность */
-@media (max-width: 768px) {
-    #head {
-        height: 60px;
-        padding: 0 20px;
-    }
-
-    #head .logo {
-        width: 50px;
-    }
-
-    #head nav {
-        gap: 15px;
-    }
-
-    #head a {
-        font-size: 16px;
-    }
-
-    #order {
-        width: 140px;
-        height: 40px;
-        font-size: 14px;
-    }
-
-    .top {
-        padding: 0 10px;
-    }
-
-    .section-title {
-        font-size: 22px;
-    }
-
-    .section-title.number {
-        font-size: 20px;
-    }
-
-    .card {
-        width: 200px;
-        padding: 15px;
-    }
-
-    .card img {
-        height: 120px;
-    }
-
-    .card h3 {
-        font-size: 14px;
-    }
-
-    .card .price {
-        font-size: 18px;
-    }
-
-    .card .old-price {
-        font-size: 12px;
-    }
+.btn-order:hover {
+    background: #555;
 }
 
-@media (max-width: 480px) {
-    #head {
-        flex-wrap: wrap;
-        height: auto;
-        padding: 10px;
-    }
+/* ----------------------------------------------------------------------------------------------------- */
 
-    #head nav {
-        gap: 10px;
-        margin: 10px 0;
-    }
-
-    #head a {
-        font-size: 14px;
-    }
-
-    #order {
-        width: 120px;
-        height: 35px;
-        font-size: 12px;
-    }
-
-    .card {
-        width: 180px;
-    }
-
-    .card img {
-        height: 100px;
-    }
-}
 
 footer {
-    background-color: #f2f2f2;
     padding: 20px 0;
     text-align: center;
     font-size: 14px;
     color: #344742;
+    width: 100%;
 }
 footer a {
     color: #344742;
